@@ -1,11 +1,48 @@
-<!DOCTYPE html>
-<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Đội hình kéo‑thả – Tộc/Hệ + Pet</title>
+
+  <title>Đội hình kéo-thả – Tộc/Hệ + Pet</title>
+  <meta name="description" content="Trình dựng đội hình 2×3 (6 ô) kéo-thả, tính kích hoạt tộc/hệ, hỗ trợ 3 ô Pet (+1 trait mỗi Pet). Tham khảo tư liệu hình ảnh từ Bam Bam Squad – Touka Technology Limited." />
+  <meta name="keywords" content="đội hình, kéo thả, tộc hệ, synergy, pet, bam bam squad, auto battler, tool" />
+  <meta name="author" content="Your Name" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://your-domain.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Đội hình kéo-thả – Tộc/Hệ + Pet" />
+  <meta property="og:description" content="Xây dựng đội hình 6 ô, kéo-thả tướng, 3 ô Pet và bảng synergy theo ngưỡng kích hoạt." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta property="og:image" content="https://your-domain.com/og-image.png" />
+  <meta property="og:site_name" content="Đội hình kéo-thả" />
+  <meta property="og:locale" content="vi_VN" />
+  <!-- Tham chiếu app chính thức -->
+  <meta property="og:see_also" content="https://apps.apple.com/vn/app/bam-bam-squad/id6751526939" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Đội hình kéo-thả – Tộc/Hệ + Pet" />
+  <meta name="twitter:description" content="Kéo-thả tướng, 3 ô Pet, tính synergy theo ngưỡng kích hoạt." />
+  <meta name="twitter:image" content="https://your-domain.com/og-image.png" />
+
+  <!-- PWA / Theming -->
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="/icons/favicon.webp" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#0f172a" />
+  <meta name="msapplication-TileColor" content="#0f172a" />
+
   <!-- TailwindCSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     .drop-target { outline: 2px dashed #94a3b8; outline-offset: 2px; }
     .dragging { opacity: .6; }
@@ -14,6 +51,7 @@
     .scrollbar-thin::-webkit-scrollbar-track { background: #f1f5f9; }
   </style>
 </head>
+
 <body class="bg-slate-50 text-slate-800 min-h-screen">
   <div class="max-w-[1200px] mx-auto p-4 md:p-6 space-y-4">
     <header class="flex items-center justify-between gap-4">
