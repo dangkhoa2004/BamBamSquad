@@ -1,8 +1,14 @@
+Dưới đây là bản README đã **bổ sung link xem dự án (Live Demo)**:
+**[https://dangkhoa2004.github.io/BamBamSquad/](https://dangkhoa2004.github.io/BamBamSquad/)**
+
+---
+
 # Đội hình kéo-thả (HTML/JS/Tailwind) – README mở rộng
 
 > Công cụ **kéo-thả** để xây dựng **đội hình 6 ô (2×3)**, hiển thị **kích hoạt tộc/hệ**, kèm **3 ô Pet** (mỗi Pet cộng **+1** vào trait của chính nó).
 > **Lưu ý nguồn tư liệu:** Dự án tham khảo hình ảnh/tư liệu của game **Bam Bam Squad** – *Touka Technology Limited*. Đây là dự án minh hoạ UI/logic phục vụ học tập, **không thương mại hóa**.
 
+**Live Demo:** [https://dangkhoa2004.github.io/BamBamSquad/](https://dangkhoa2004.github.io/BamBamSquad/)
 **Tải game chính thức:** [https://apps.apple.com/vn/app/bam-bam-squad/id6751526939](https://apps.apple.com/vn/app/bam-bam-squad/id6751526939)
 
 ---
@@ -71,7 +77,7 @@ Có thể bị chặn `fetch()` file cục bộ; nếu lỗi, dùng **Cách 1**.
 
 ## 4) Hướng dẫn sử dụng
 
-1. Mở app.
+1. Mở app (hoặc xem **Live Demo**: [https://dangkhoa2004.github.io/BamBamSquad/](https://dangkhoa2004.github.io/BamBamSquad/)).
 2. Tab **Tướng** → kéo thả vào **bàn cờ 2×3**; chuột phải để xoá.
 3. Tab **Pet** → kéo thả vào **3 ô Pet**; chuột phải để xoá.
 4. Quan sát **Tộc/Hệ kích hoạt** ở panel phải.
@@ -158,7 +164,7 @@ Có thể bị chặn `fetch()` file cục bộ; nếu lỗi, dùng **Cách 1**.
 ## 7) Kiến trúc & Kỹ thuật
 
 * **UI**: Tailwind CDN, không cần build; layout responsive.
-* **Drag-and-Drop**: Native HTML5 DnD (`dragstart`, `dragover`, `drop`…), payload JSON chỉ chứa `{ kind: 'champ'|'pet', id, from }`.
+* **Drag-and-Drop**: Native HTML5 DnD (`dragstart`, `dragover`, `drop`…), payload JSON `{ kind: 'champ'|'pet', id, from }`.
 * **Render**: tạo slot từ `<template>`, state `slots` (ma trận 2×3) và `petSlots` (mảng 3).
 * **Synergy**:
 
@@ -178,7 +184,8 @@ Có thể bị chặn `fetch()` file cục bộ; nếu lỗi, dùng **Cách 1**.
 
 ## 8) Tuỳ biến & Đồng bộ với **Bam Bam Squad**
 
-> Link game: [https://apps.apple.com/vn/app/bam-bam-squad/id6751526939](https://apps.apple.com/vn/app/bam-bam-squad/id6751526939)
+**Link game:** [https://apps.apple.com/vn/app/bam-bam-squad/id6751526939](https://apps.apple.com/vn/app/bam-bam-squad/id6751526939)
+**Live Demo của dự án:** [https://dangkhoa2004.github.io/BamBamSquad/](https://dangkhoa2004.github.io/BamBamSquad/)
 
 * **Đồng bộ trait/tướng/pet**:
 
@@ -189,7 +196,7 @@ Có thể bị chặn `fetch()` file cục bộ; nếu lỗi, dùng **Cách 1**.
 * **Icon/Ảnh chính thức**:
 
   * Dùng URL công khai (nếu được phép) hoặc chuyển ảnh sang Data URI.
-  * Cân nhắc kích thước ~256×256 để hiển thị nét.
+  * Khuyến nghị kích cỡ ~256×256 để hiển thị nét.
 
 ---
 
@@ -200,7 +207,7 @@ Có thể bị chặn `fetch()` file cục bộ; nếu lỗi, dùng **Cách 1**.
 * **Bộ lọc nâng cao** (bao gồm/loại trừ trait).
 * **Xuất PNG** đội hình.
 * **I18n**: file dịch riêng.
-* **Kiểm tra hợp lệ** (ví dụ: giới hạn số tướng cùng loại, slot khoá… nếu game có quy tắc).
+* **Kiểm tra hợp lệ** (giới hạn loại tướng, slot khoá… nếu game có quy tắc).
 
 ---
 
@@ -214,7 +221,7 @@ Có thể bị chặn `fetch()` file cục bộ; nếu lỗi, dùng **Cách 1**.
 
 ## 11) Hiệu năng
 
-* Gallery paginate nhẹ (nếu dữ liệu lớn, có thể bổ sung virtual list).
+* Gallery paginate nhẹ (nếu dữ liệu lớn có thể thêm virtual list).
 * Cache HTTP mặc định; có thể thêm hash version cho file data khi deploy.
 * Data gộp theo `id` tránh trùng lặp.
 
@@ -222,7 +229,7 @@ Có thể bị chặn `fetch()` file cục bộ; nếu lỗi, dùng **Cách 1**.
 
 ## 12) Triển khai (Deploy)
 
-* **GitHub Pages**: push toàn bộ thư mục, bật Pages.
+* **GitHub Pages**: push toàn bộ thư mục, bật Pages → (Ví dụ) **Live Demo**: [https://dangkhoa2004.github.io/BamBamSquad/](https://dangkhoa2004.github.io/BamBamSquad/)
 * **Netlify/Vercel**: kéo-thả folder hoặc kết nối repo, không cần build.
 * **Nginx/Apache/S3**: serve tĩnh là đủ (lưu ý CORS nếu `img` là URL ngoài).
 
@@ -250,6 +257,7 @@ Có thể bị chặn `fetch()` file cục bộ; nếu lỗi, dùng **Cách 1**.
 * Nếu bạn là đại diện **Touka Technology Limited** và muốn điều chỉnh/nêu yêu cầu, vui lòng liên hệ — mình sẽ cập nhật ngay.
 
 **Tải Bam Bam Squad trên App Store:** [https://apps.apple.com/vn/app/bam-bam-squad/id6751526939](https://apps.apple.com/vn/app/bam-bam-squad/id6751526939)
+**Live Demo dự án:** [https://dangkhoa2004.github.io/BamBamSquad/](https://dangkhoa2004.github.io/BamBamSquad/)
 
 ---
 
