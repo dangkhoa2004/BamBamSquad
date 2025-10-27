@@ -3,7 +3,7 @@ const state = { rows: 2, cols: 3, slots: [], petSlots: Array(3).fill(null), tab:
 function $(sel, root=document){ return root.querySelector(sel); }
 function $all(sel, root=document){ return Array.from(root.querySelectorAll(sel)); }
 // Paths for GitHub Pages
-function repoBase(){ if(location.hostname.endsWith('github.io')){ const p=location.pathname.split('/').filter(Boolean); return p.length?('/'+p[0]+'/'):'/'; } return '/'; }
+function repoBase(){ if(location.hostname.endsWith('github.io/BamBamSquad/')){ const p=location.pathname.split('/').filter(Boolean); return p.length?('/'+p[0]+'/'):'/'; } return '/'; }
 function toAsset(p){ if(!p || /^https?:|^data:/.test(p)) return p; return repoBase()+String(p).replace(/^\//,''); }
 // Data
 let TRAIT_THRESHOLDS={}, CHAMPIONS=[], PETS=[];
