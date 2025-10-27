@@ -1,0 +1,101 @@
+{
+  "trait_thresholds": {
+    "Huyết tộc": [
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "champions": [
+    {
+      "id": "ksrx",
+      "name": "Kỵ Sĩ Rồng Xương",
+      "traits": [
+        "Hiệp sĩ",
+        "Huyết tộc"
+      ],
+      "img": "/img/ksrx.JPEG"
+    },
+    {
+      "id": "dl",
+      "name": "Đại Lich",
+      "traits": [
+        "Pháp sư",
+        "Huyết tộc"
+      ],
+      "img": "/img/dl.JPEG"
+    },
+    {
+      "id": "nld",
+      "name": "Nhện Lông Độc",
+      "traits": [
+        "Xạ thủ",
+        "Huyết tộc"
+      ],
+      "img": "/img/nld.JPEG"
+    },
+    {
+      "id": "btm",
+      "name": "Bá Tước Ma",
+      "traits": [
+        "Sát thủ",
+        "Huyết tộc"
+      ],
+      "img": "/img/btm.JPEG"
+    },
+    {
+      "id": "ths",
+      "name": "Triệu Hồn Sư",
+      "traits": [
+        "Pháp sư",
+        "Huyết tộc"
+      ],
+      "img": "/img/ths.JPEG"
+    },
+    {
+      "id": "nd",
+      "name": "Nhện Độc",
+      "traits": [
+        "Xạ thủ",
+        "Huyết tộc"
+      ],
+      "img": "/img/nd.JPEG"
+    },
+    {
+      "id": "mcr",
+      "name": "Ma Cà Rồng",
+      "traits": [
+        "Sát thủ",
+        "Huyết tộc"
+      ],
+      "img": "/img/mcr.JPEG"
+    },
+    {
+      "id": "oh",
+      "name": "Oan Hồn",
+      "traits": [
+        "Xạ thủ",
+        "Huyết tộc"
+      ],
+      "img": "/img/oh.JPEG"
+    },
+    {
+      "id": "doi",
+      "name": "Dơi",
+      "traits": [
+        "Sát thủ",
+        "Huyết tộc"
+      ],
+      "img": "/img/doi.JPEG"
+    }
+  ],
+  "pets": [
+    {
+      "id": "honma",
+      "name": "Hồn ma",
+      "trait": "Huyết tộc",
+      "img": "/img/honma.JPEG"
+    }
+  ]
+}

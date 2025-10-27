@@ -1,0 +1,119 @@
+{
+  "trait_thresholds": {
+    "Nhân tộc": [
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "champions": [
+    {
+      "id": "dpsl",
+      "name": "Đại Pháp Sư Lửa",
+      "traits": [
+        "Pháp sư",
+        "Nhân tộc"
+      ],
+      "img": "/img/dpsl.JPEG"
+    },
+    {
+      "id": "dpsn",
+      "name": "Đại Pháp Sư Nước",
+      "traits": [
+        "Thầy tu",
+        "Nhân tộc"
+      ],
+      "img": "/img/dpsn.JPEG"
+    },
+    {
+      "id": "ks",
+      "name": "Kỵ Sĩ",
+      "traits": [
+        "Hiệp sĩ",
+        "Nhân tộc"
+      ],
+      "img": "/img/ks.JPEG"
+    },
+    {
+      "id": "ts",
+      "name": "Thần Sấm",
+      "traits": [
+        "Chiến sĩ",
+        "Nhân tộc"
+      ],
+      "img": "/img/ts.JPEG"
+    },
+    {
+      "id": "vb",
+      "name": "Vệ Binh",
+      "traits": [
+        "Hiệp sĩ",
+        "Nhân tộc"
+      ],
+      "img": "/img/vb.JPEG"
+    },
+    {
+      "id": "lkb",
+      "name": "Lưỡng Kiếm Binh",
+      "traits": [
+        "Hiêp sĩ",
+        "Nhân tộc"
+      ],
+      "img": "/img/lkb.JPEG"
+    },
+    {
+      "id": "tns",
+      "name": "Thủy Nguyên Sứ",
+      "traits": [
+        "Thầy tu",
+        "Nhân tộc"
+      ],
+      "img": "/img/tns.JPEG"
+    },
+    {
+      "id": "hns",
+      "name": "Hỏa Nguyên Sứ",
+      "traits": [
+        "Pháp sư",
+        "Nhân tộc"
+      ],
+      "img": "/img/hns.JPEG"
+    },
+    {
+      "id": "lg",
+      "name": "Lính Giáo",
+      "traits": [
+        "Chiến sĩ",
+        "Nhân tộc"
+      ],
+      "img": "/img/lg.JPEG"
+    },
+    {
+      "id": "ps",
+      "name": "Pháp Sư",
+      "traits": [
+        "Thầy tu",
+        "Nhân tộc"
+      ],
+      "img": "/img/ps.JPEG"
+    },
+    {
+      "id": "ks",
+      "name": "Kiếm Sĩ",
+      "traits": [
+        "Đấu Sĩ",
+        "Nhân tộc"
+      ],
+      "img": "/img/ks.JPEG"
+    }
+  ],
+  "pets": [
+    {
+      "id": "thomoxuong",
+      "name": "Thợ mỏ xương",
+      "trait": "Nhân tộc",
+      "img": "/img/thomoxuong.JPEG"
+    }
+  ]
+}

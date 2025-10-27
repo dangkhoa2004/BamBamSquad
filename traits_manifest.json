@@ -1,0 +1,8 @@
+{
+  "files": [
+    "data/spirit_data.json",
+    "data/human_data.json",
+    "data/dark_data.json",
+    "data/monster_data.json"
+  ]
+}

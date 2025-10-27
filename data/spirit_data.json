@@ -1,0 +1,102 @@
+{
+  "trait_thresholds": {
+    "Tinh Linh Tộc": [
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "champions": [
+    {
+      "id": "tlg",
+      "name": "Tinh Linh Gió",
+      "traits": [
+        "Xạ thủ",
+        "Tinh Linh Tộc"
+      ],
+      "img": "/img/tlg.JPEG"
+    },
+    {
+      "id": "ttr",
+      "name": "Tư Tế Rừng",
+      "traits": [
+        "Thầy Tu",
+        "Tinh Linh Tộc"
+      ],
+      "img": "/img/ttr.JPEG"
+    },
+    {
+      "id": "mns",
+      "name": "Mộc Nguyên Sứ",
+      "traits": [
+        "Đấu sĩ",
+        "Tinh Linh Tộc"
+      ],
+      "img": "/img/mns.JPEG"
+    },
+    {
+      "id": "kirby1",
+      "name": "Kirby Khổng Lồ",
+      "traits": [
+        "Đấu sĩ",
+        "Tinh Linh Tộc"
+      ],
+      "img": "/img/kirby1.JPEG"
+    },
+    {
+      "id": "xttl",
+      "name": "Xạ Thủ Tinh Linh",
+      "traits": [
+        "Xạ thủ",
+        "Tinh Linh Tộc"
+      ],
+      "img": "/img/xttl.JPEG"
+    },{
+      "id": "tlksb",
+      "name": "Tinh Linh Kỵ Sĩ Băng",
+      "traits": [
+        "Hiệp sĩ",
+        "Tinh Linh Tộc"
+      ],
+      "img": "/img/tlksb.JPEG"
+    },
+    {
+      "id": "vstl",
+      "name": "Vệ Sĩ Tinh Linh",
+      "traits": [
+        "Sát thủ",
+        "Tinh Linh Tộc"
+      ],
+      "img": "/img/vstl.JPEG"
+    },
+    {
+      "id": "kstl",
+      "name": "Kiếm Sĩ Tinh Linh",
+      "traits": [
+        "Hiệp sĩ",
+        "Tinh Linh Tộc"
+      ],
+      "img": "/img/kstl.JPEG"
+    },
+    {
+      "id": "kirby2",
+      "name": "Kirby",
+      "traits": [
+        "Đấu sĩ",
+        "Tinh Linh Tộc"
+      ],
+      "img": "/img/kirby2.JPEG"
+    },
+    {
+      "id": "tlh",
+      "name": "Tiểu Linh Hồn",
+      "traits": [
+        "Pháp sư",
+        "Tinh Linh Tộc"
+      ],
+      "img": "/img/tlh.JPEG"
+    }
+  ],
+  "pets": []
+}
