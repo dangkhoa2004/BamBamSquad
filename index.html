@@ -3,52 +3,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Đội hình kéo-thả – Tộc/Hệ + Pet</title>
-  <meta name="description" content="Trình dựng đội hình 2×3 (6 ô) kéo-thả, tính kích hoạt tộc/hệ, hỗ trợ 3 ô Pet (+1 trait mỗi Pet). Tham khảo tư liệu hình ảnh từ Bam Bam Squad – Touka Technology Limited." />
+  <meta name="description"
+    content="Trình dựng đội hình 2×3 (6 ô) kéo-thả, tính kích hoạt tộc/hệ, 3 ô Pet (+1 trait mỗi Pet). Tham khảo tư liệu hình ảnh từ Bam Bam Squad – Touka Technology Limited." />
   <meta name="keywords" content="đội hình, kéo thả, tộc hệ, synergy, pet, bam bam squad, auto battler, tool" />
   <meta name="author" content="Your Name" />
   <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://your-domain.com/" />
+  <link rel="canonical" href="https://dangkhoa2004.github.io/BamBamSquad/" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Twitter -->
   <meta property="og:title" content="Đội hình kéo-thả – Tộc/Hệ + Pet" />
-  <meta property="og:description" content="Xây dựng đội hình 6 ô, kéo-thả tướng, 3 ô Pet và bảng synergy theo ngưỡng kích hoạt." />
+  <meta property="og:description"
+    content="Xây dựng đội hình 6 ô, kéo-thả tướng, 3 ô Pet và bảng synergy theo ngưỡng kích hoạt." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://your-domain.com/" />
-  <meta property="og:image" content="https://your-domain.com/og-image.png" />
+  <meta property="og:url" content="https://dangkhoa2004.github.io/BamBamSquad/" />
+  <meta property="og:image" content="og-image.png" />
   <meta property="og:site_name" content="Đội hình kéo-thả" />
   <meta property="og:locale" content="vi_VN" />
-  <!-- Tham chiếu app chính thức -->
   <meta property="og:see_also" content="https://apps.apple.com/vn/app/bam-bam-squad/id6751526939" />
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Đội hình kéo-thả – Tộc/Hệ + Pet" />
   <meta name="twitter:description" content="Kéo-thả tướng, 3 ô Pet, tính synergy theo ngưỡng kích hoạt." />
-  <meta name="twitter:image" content="https://your-domain.com/og-image.png" />
+  <meta name="twitter:image" content="og-image.png" />
 
-  <!-- PWA / Theming -->
+  <!-- Theming / PWA -->
   <meta name="theme-color" content="#0f172a" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <!-- Nếu muốn hỗ trợ iOS cũ, có thể thêm: <meta name="apple-mobile-web-app-capable" content="yes"> -->
+  <link rel="manifest" href="site.webmanifest" />
 
-  <!-- Icons -->
-  <link rel="icon" type="image/svg+xml" href="/icons/favicon.webp" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#0f172a" />
+  <!-- Icons (đường dẫn tương đối, KHÔNG có “/” đầu) -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#0f172a" />
   <meta name="msapplication-TileColor" content="#0f172a" />
 
-  <!-- TailwindCSS CDN -->
+  <!-- Tailwind CDN (ổn cho demo; build CLI khi production) -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    .drop-target { outline: 2px dashed #94a3b8; outline-offset: 2px; }
-    .dragging { opacity: .6; }
-    .scrollbar-thin::-webkit-scrollbar { height: 8px; width: 8px; }
-    .scrollbar-thin::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 8px; }
-    .scrollbar-thin::-webkit-scrollbar-track { background: #f1f5f9; }
+    .drop-target {
+      outline: 2px dashed #94a3b8;
+      outline-offset: 2px;
+    }
+
+    .dragging {
+      opacity: .6;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar {
+      height: 8px;
+      width: 8px;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 8px;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
   </style>
 </head>
 
@@ -57,12 +73,17 @@
     <header class="flex items-center justify-between gap-4">
       <div>
         <h1 class="text-2xl md:text-3xl font-bold">Trình dựng đội hình (kéo‑thả)</h1>
-        <p class="text-sm text-slate-500">Bàn cờ cố định <span class="font-semibold">2×3 = 6 ô</span>. Kéo ảnh tướng vào bàn cờ để kích hoạt
-          <span class="font-semibold">tộc/hệ</span>. Có 3 ô <span class="font-semibold">Pet</span> — mỗi Pet cộng +1 vào tộc/hệ của Pet đó.</p>
+        <p class="text-sm text-slate-500">Bàn cờ cố định <span class="font-semibold">2×3 = 6 ô</span>. Kéo ảnh tướng vào
+          bàn cờ để kích hoạt
+          <span class="font-semibold">tộc/hệ</span>. Có 3 ô <span class="font-semibold">Pet</span> — mỗi Pet cộng +1 vào
+          tộc/hệ của Pet đó.
+        </p>
       </div>
       <div class="flex flex-wrap gap-2">
-        <button id="btnClear" class="px-3 py-2 rounded-xl bg-slate-800 text-white text-sm hover:bg-slate-900">Làm mới</button>
-        <button id="btnExport" class="px-3 py-2 rounded-xl bg-white border text-sm hover:bg-slate-100">Xuất JSON</button>
+        <button id="btnClear" class="px-3 py-2 rounded-xl bg-slate-800 text-white text-sm hover:bg-slate-900">Làm
+          mới</button>
+        <button id="btnExport" class="px-3 py-2 rounded-xl bg-white border text-sm hover:bg-slate-100">Xuất
+          JSON</button>
         <label class="px-3 py-2 rounded-xl bg-white border text-sm hover:bg-slate-100 cursor-pointer">Nhập JSON
           <input id="importFile" type="file" accept="application/json" class="hidden" />
         </label>
@@ -74,18 +95,21 @@
       <aside class="lg:col-span-4 space-y-3">
         <div class="p-4 rounded-2xl bg-white shadow-sm">
           <div class="flex items-center gap-2 mb-3">
-            <input id="searchInput" type="text" placeholder="Tìm theo tên / tộc / hệ" class="w-full px-3 py-2 rounded-xl border" />
+            <input id="searchInput" type="text" placeholder="Tìm theo tên / tộc / hệ"
+              class="w-full px-3 py-2 rounded-xl border" />
             <button id="btnResetFilter" class="px-3 py-2 rounded-xl bg-slate-100 text-sm">Xoá</button>
           </div>
 
           <!-- Tabs -->
           <div class="flex gap-2 mb-3">
-            <button id="tabChamp" class="tab px-3 py-1 rounded-full border bg-slate-900 text-white text-sm">Tướng</button>
+            <button id="tabChamp"
+              class="tab px-3 py-1 rounded-full border bg-slate-900 text-white text-sm">Tướng</button>
             <button id="tabPet" class="tab px-3 py-1 rounded-full border bg-white text-sm">Pet</button>
           </div>
 
           <div id="traitFilters" class="flex flex-wrap gap-2 mb-3"></div>
-          <div id="gallery" class="grid grid-cols-2 sm:grid-cols-3 gap-3 max-h-[48vh] overflow-auto pr-1 scrollbar-thin"></div>
+          <div id="gallery"
+            class="grid grid-cols-2 sm:grid-cols-3 gap-3 max-h-[48vh] overflow-auto pr-1 scrollbar-thin"></div>
         </div>
       </aside>
 
@@ -158,4 +182,5 @@
   </script>
   <script src="script.js"></script>
 </body>
+
 </html>
