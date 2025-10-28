@@ -96,6 +96,12 @@
       "name": "Hồn ma",
       "trait": "Huyết tộc",
       "img": "/img/honma.JPEG"
+    },
+    {
+      "id": "rongvayxuong",
+      "name": "Rồng Vảy Xương",
+      "trait": "Huyết tộc",
+      "img": "/img/rongvayxuong.JPEG"
     }
   ]
 }
